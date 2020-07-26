@@ -6,3 +6,5 @@ Para levantar todo el stack
 ```sh
 $ docker-compose up
 ```
+
+Importar la coleccion (Cordata Services.postman_collection.json) en Postman 

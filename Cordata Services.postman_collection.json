@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "b55736aa-6d91-4ec9-971f-c81bf8939bf2",
+		"name": "Cordata Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear Factura",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abc123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bill",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"emisorRut\": \"60910000-1\",\n    \"receptorRut\": \"96439000-2\",\n    \"folio\": 1387,\n    \"montoNeto\": 1699,\n    \"montoIva\": 8943,\n    \"montoTotal\": 10642,\n    \"extraData\": {\n        \"hello\": 1\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8081/api/v1/facturas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"facturas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Facturas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abc123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bill",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"emisorRut\": \"60910000-1\",\n    \"receptorRut\": \"96439000-2\",\n    \"folio\": 1387,\n    \"montoNeto\": 1699,\n    \"montoIva\": 8943,\n    \"montoTotal\": 10642,\n    \"extraData\": {\n        \"hello\": 1\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8081/api/v1/facturas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"facturas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Factura",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "abc123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bill",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"emisorRut\": \"60910000-1\",\n    \"receptorRut\": \"96439000-2\",\n    \"folio\": 1387,\n    \"montoNeto\": 1699,\n    \"montoIva\": 8943,\n    \"montoTotal\": 10642,\n    \"extraData\": {\n        \"hello\": 1\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/facturas/bb2f9c86-a603-41dc-98cd-f8b3087e2d7fkkk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"facturas",
+						"bb2f9c86-a603-41dc-98cd-f8b3087e2d7fkkk"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
