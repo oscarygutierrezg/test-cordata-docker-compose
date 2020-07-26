@@ -1,0 +1,25 @@
+version: '3'
+services:
+  database-posgrest:
+    image: postgres
+    hostname: database-posgrest
+    container_name: database-posgrest
+    ports:
+      - "5432:5432"
+    env_file:
+      - database.env 
+    networks:
+      - shared-net
+  backend:
+    image:  "oscarygutierrezg/test-cordata-backend"
+    ports:
+      - "8081:8081"
+    links:
+      - database-posgrest
+    depends_on:
+      - "database-posgrest"
+    networks:
+      - shared-net
+networks:
+  shared-net:
+    driver: bridge
