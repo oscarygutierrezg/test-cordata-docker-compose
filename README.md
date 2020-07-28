@@ -7,4 +7,4 @@ Para levantar todo el stack
 $ docker-compose up
 ```
 
-Importar la coleccion (Cordata Services.postman_collection.json) en Postman 
+Importar la coleccion (Cordata Services.postman_collection.json) en Postman para probar los servicios facilemente
