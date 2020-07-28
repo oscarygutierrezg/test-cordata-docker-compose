@@ -1,4 +1,4 @@
-# test-cordate-docker-compose
+# test-cordata-docker-compose
 Verificar que en maquina local no este corriendo nada en puertos 8081 y 5432
 Verificar que en docker no este corriendo nada en puertos 8081 y 5432
 
